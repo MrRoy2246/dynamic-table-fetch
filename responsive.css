@@ -1,0 +1,203 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 90%; /* Adjusted for smaller screens */
+  max-width: 1000px; /* Max width for larger screens */
+  margin: 3% auto;
+  box-sizing: border-box;
+}
+
+.innerContainer {
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #172554;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  flex-wrap: wrap; /* Allow header content to wrap on small screens */
+}
+
+header img {
+  height: 50px;
+  margin-right: 20px;
+}
+
+header a {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.innerContainer h1 {
+  margin-bottom: 10px;
+  color: #172554;
+  font-size: 24px; /* Adjusted for smaller screens */
+}
+
+.section_ip {
+  margin-bottom: 20px;
+}
+
+.section_ip p {
+  font-size: 18px; /* Adjusted for smaller screens */
+}
+
+.section {
+  margin-top: 50px;
+  position: relative;
+}
+
+.tag-container {
+  position: absolute;
+  top: -38px;
+  left: 0;
+  background-color: #172554;
+  color: azure;
+  padding: 4px 8px; /* Adjusted padding */
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  border-radius: 4px 4px 0 0;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.tag-container h4 {
+  margin: 2px;
+}
+
+.section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0 0;
+}
+
+.section th,
+.section td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.section th {
+  background-color: #172554;
+  color: azure;
+}
+
+.video-server-status {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #333;
+  text-align: center;
+}
+
+.video-server-status p {
+  display: inline-block;
+  background-color: #172554;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  border-radius: 4px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 1);
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #172554;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 1);
+  margin: 5px; /* Added margin for better spacing */
+}
+
+#restart_server_button {
+  background-color: brown;
+}
+
+#button-cluster {
+  display: flex;
+  flex-wrap: wrap; /* Allow buttons to wrap on small screens */
+  justify-content: center;
+  gap: 10px; /* Space between buttons */
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 80%; /* Increase width for smaller screens */
+  }
+
+  header {
+    justify-content: center; /* Center header content */
+    text-align: center;
+  }
+
+  header img {
+    margin-right: 0; /* Remove margin for smaller screens */
+    margin-bottom: 10px; /* Add space below the logo */
+  }
+
+  .innerContainer h1 {
+    font-size: 20px; /* Smaller font size for smaller screens */
+  }
+
+  .section_ip p {
+    font-size: 16px; /* Smaller font size for smaller screens */
+  }
+
+  .section th,
+  .section td {
+    font-size: 14px; /* Smaller font size for table cells */
+  }
+
+  .video-server-status p {
+    font-size: 1em;
+    padding: 4px 8px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 90%; /* Full width on very small screens */
+    margin: 10px 0; /* Adjust margin */
+  }
+
+  .innerContainer h1 {
+    font-size: 18px; /* Even smaller font size for mobile */
+  }
+
+  .section_ip p {
+    font-size: 14px; /* Smaller font size for mobile */
+  }
+
+  .section th,
+  .section td {
+    font-size: 12px; /* Smaller font size for table cells */
+    padding: 6px; /* Reduce padding */
+  }
+
+  button {
+    width: 100%; /* Full-width buttons on mobile */
+    margin: 5px 0; /* Adjust margin */
+  }
+}

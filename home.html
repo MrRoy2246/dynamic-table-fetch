@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acceleye</title>
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <img src="accelx-logo.webp" alt="logo" />
+        <a href="https://acceleye.com">AccelEye</a>
+      </header>
+      <div class="innerContainer">
+        <h1>Video Server Fixed ID: acceleye-aws-001</h1>
+        <div class="section_ip">
+          <p>IP Address: 192.168.1.235</p>
+          <p>
+            Current Time: <span id="current_time">2025-02-03 19:28:47</span>
+          </p>
+        </div>
+
+        <div class="section">
+          <div class="tag-container">
+            <h4>Camera Status</h4>
+          </div>
+          <table id="camera_table">
+            <thead>
+              <tr>
+                <th>Serial</th>
+                <th>Address</th>
+                <th>Type</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="data-output">
+              <!-- Data will be populated here -->
+            </tbody>
+          </table>
+        </div>
+
+        <div class="video-server-status" id="video_server_status">
+          <p>Server Is Running: 4ba44a84-06e3-447c-a215-3c3b2ca9e38a</p>
+        </div>
+
+        <div id="button-cluster">
+          <button id="restart_server_button">Restart Server</button>
+          <button id="change_server_button">Change Video Server</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Version Control -->
+    <div class="container">
+      <div class="innerContainer">
+        <div class="section">
+          <h4>Version Control</h4>
+          <div class="button-container">
+            <button id="loadBranchesBtn">Check For Updates</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <!-- <script>
+    fetch("https://jsonplaceholder.typicode.com/todos/1")
+      .then((response) => response.json())
+      .then((json) => console.log(json));
+  </script> -->
+  <script src="script.js"></script>
+</html>

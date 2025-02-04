@@ -1,0 +1,145 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+.container {
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 45%;
+  max-width: 1000px;
+  margin: 3% auto;
+  box-sizing: border-box;
+}
+.innerContainer {
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #172554;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+header img {
+  height: 50px;
+  margin-right: 20px;
+}
+header a {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.innerContainer h1 {
+  margin-bottom: 10px;
+  color: #172554;
+}
+
+.section_ip {
+  margin-bottom: 20px;
+}
+.section_ip p {
+  font-size: 20px;
+}
+
+.section {
+  margin-top: 50px;
+  position: relative;
+}
+.tag-container {
+  position: absolute;
+  top: -38px;
+  left: 0;
+
+  background-color: #172554;
+  color: azure;
+  padding: 4px 4px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  border-radius: 4px 4px 0 0;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.tag-container h4 {
+  margin: 2px;
+}
+.section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0 0;
+}
+
+.section th,
+.section td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.section th {
+  background-color: #172554;
+  color: azure;
+}
+
+.video-server-status {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #333;
+  text-align: center;
+}
+
+.video-server-status p {
+  display: inline-block;
+  background-color: #172554;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  border-radius: 4px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 1);
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #172554;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 1);
+}
+#restart_server_button {
+  background-color: brown;
+}
+
+@media screen and (max-width: 480px) {
+  .section_ip p {
+    font-size: 16px;
+  }
+
+  .tag-container {
+    font-size: 1em;
+  }
+
+  .section th,
+  .section td {
+    font-size: 12px;
+  }
+
+  .video-server-status p {
+    font-size: 1em;
+    padding: 4px 8px;
+  }
+}
